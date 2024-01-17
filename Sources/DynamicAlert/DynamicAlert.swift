@@ -87,3 +87,24 @@ public extension DynamicAlert {
     return config
   }
 }
+
+// MARK: - Messages
+
+public extension DynamicAlert {
+  
+  func getMessages(for url: URL, completion: @escaping (Result<[DynamicAlertMessage], Error>) -> Void) {
+    get(url, completion: completion)
+  }
+  
+  func getMessages(for url: URL, completion: @escaping (Result<DynamicAlertMessage, Error>) -> Void) {
+    get(url, completion: completion)
+  }
+  
+  func getMessage(for url: URL) -> AnyPublisher<[DynamicAlertMessage], Error> {
+    get(url)
+  }
+  
+  func getMessage(for url: URL) -> AnyPublisher<DynamicAlertMessage, Error> {
+    get(url)
+  }
+}
