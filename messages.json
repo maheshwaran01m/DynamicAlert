@@ -4,6 +4,6 @@
     "title": "App Alert",
     "message": "This is a dynamic App Alert",
     "buttonTitle" "Ok",
-    "isEnabled": true,
+    "isEnabled": true
   }
 ]
