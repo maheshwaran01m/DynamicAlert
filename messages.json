@@ -3,7 +3,7 @@
     "id": 1,
     "title": "App Alert",
     "message": "This is a dynamic App Alert",
-    "buttonTitle" "Ok",
+    "buttonTitle": "Ok",
     "isEnabled": true
   }
 ]
