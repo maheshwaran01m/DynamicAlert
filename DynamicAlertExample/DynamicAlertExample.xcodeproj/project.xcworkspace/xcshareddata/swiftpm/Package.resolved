@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "dynamicalert",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:maheshwaran01m/DynamicAlert.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "fa34969891a67a1fc3689b068483a8e78f4a6148"
+      }
+    }
+  ],
+  "version" : 2
+}
