@@ -20,6 +20,7 @@ class ContentViewModel: ObservableObject {
   
   private func fetchMessages() {
     guard let url = URL(string: "https://maheshwaran01m.github.io/DynamicAlert/messages.json") else { return }
+    
     manager.getMessages(for: url) { [weak self] result in
       guard let self else { return }
       switch result {

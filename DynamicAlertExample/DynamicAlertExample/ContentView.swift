@@ -22,7 +22,7 @@ struct ContentView: View {
     .padding()
     
     .dynamicAlert(.init(get: {
-      viewModel.message?.isEnabled != nil
+      viewModel.message != nil && viewModel.message?.isEnabled == true
     }, set: { isEnabled in
       if !isEnabled {
         viewModel.message = nil
